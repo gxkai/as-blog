@@ -1,0 +1,49 @@
+{
+  "name": "@as1024/utils",
+  "version": "2.2.0",
+  "description": "Personal collection of common JavaScript / TypeScript utils",
+  "author": "Alvaro Saburido <hola@alvarosaburido.dev> (https://github.com/alvarosabu/)",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "utils",
+    "javascript",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "./dist/as1024-utils.umd.js",
+  "module": "./dist/as1024-utils.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/as1024-utils.es.js",
+      "require": "./dist/as1024-utils.umd.js"
+    },
+    "./": "./dist/as1024-utils.es.js"
+  },
+  "homepage": "https://github.com/alvarosabu/portfolio#readme",
+  "repository": "https://github.com/alvarosabu/as-portfolio",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ci": "vitest run",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "pathe": "^0.3.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vite-plugin-banner": "^0.2.0",
+    "vite-plugin-dts": "^1.1.1",
+    "vitest": "^0.10.5"
+  }
+}
