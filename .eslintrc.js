@@ -36,5 +36,6 @@ module.exports = {
     'vue/max-attributes-per-line': 'off',
     'vue/multi-word-component-names': 0,
     'vue/no-multiple-template-root': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off'
   },
 }

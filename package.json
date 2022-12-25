@@ -38,7 +38,9 @@
     "dev:portfolio": "turbo run dev --filter=portfolio",
     "build:portfolio": "turbo run build --filter=portfolio",
     "generate:portfolio": "turbo run generate --filter=portfolio",
-    "start:portfolio": "turbo run generate --filter=portfolio"
+    "start:portfolio": "turbo run generate --filter=portfolio",
+    "dev:playground": "turbo run dev --filter=playground",
+    "build:playground": "turbo run build --filter=playground"
   },
   "devDependencies": {
     "@as1024/prettier-config": "workspace:^1.1.0",
