@@ -13,14 +13,14 @@
   ],
   "license": "MIT",
   "main": "./dist/as1024-utils.umd.js",
-  "module": "./dist/as1024-utils.es.js",
+  "module": "./dist/as1024-utils.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/as1024-utils.es.js",
+      "import": "./dist/as1024-utils.mjs",
       "require": "./dist/as1024-utils.umd.js"
     },
-    "./": "./dist/as1024-utils.es.js"
+    "./": "./dist/as1024-utils.mjs"
   },
   "homepage": "https://github.com/alvarosabu/portfolio#readme",
   "repository": "https://github.com/alvarosabu/as-portfolio",
