@@ -7,6 +7,21 @@
     "dev": {
       "dependsOn": ["^build"]
     },
+    "generate": {
+      "dependsOn": ["^build"]
+    },
+    "story:dev": {
+      "dependsOn": ["^build"]
+    },
+    "story:build": {
+      "dependsOn": ["^build"]
+    },
+    "test:ci": {
+      "dependsOn": ["^build"]
+    },
+    "test:e2e:ci": {
+      "dependsOn": ["^build"]
+    },
     "test": {
       "outputs": []
     },
