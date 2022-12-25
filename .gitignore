@@ -6,3 +6,8 @@ packages/.DS_Store
 # Local Netlify folder
 .netlify
 /pnpm-lock.yaml
+/.idea/.gitignore
+/.idea/as-blog.iml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
