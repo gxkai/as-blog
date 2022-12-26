@@ -1,7 +1,6 @@
 {
   "name": "@as1024/ui",
   "version": "2.18.1",
-  "type": "module",
   "description": "UI Library for AS development",
   "author": "Alvaro Saburido <hola@alvarosaburido.dev> (https://github.com/alvarosabu/)",
   "main": "./dist/as1024-ui.umd.cjs",
@@ -31,7 +30,8 @@
   },
   "dependencies": {
     "@vueuse/core": "9.3.0",
-    "vue": "3.2.39"
+    "vue": "3.2.39",
+    "@as1024/utils": "workspace:*"
   },
   "devDependencies": {
     "@cypress/vite-dev-server": "3.1.1",
@@ -76,6 +76,10 @@
     "vue-tsc": "0.40.13",
     "postcss": "8.4.14",
     "postcss-import": "14.1.0",
-    "postcss-nested": "5.0.6"
+    "postcss-nested": "5.0.6",
+    "resize-observer-polyfill": "1.5.1",
+    "vite-plugin-vue-setup-extend": "0.4.0",
+    "unplugin-auto-import": "0.12.1",
+    "@iconify-json/ph": "1.1.3"
   }
 }

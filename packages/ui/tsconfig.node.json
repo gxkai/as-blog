@@ -2,7 +2,18 @@
   "compilerOptions": {
     "composite": true,
     "module": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "declaration": false,
+    "outDir": "./dist"
   },
-  "include": ["vite.config.ts"]
+  "exclude": [
+    "**/dist/**",
+    "./unocss.config.ts",
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts",
+    "**/*.vue",
+    "**/*.tsx"
+  ]
 }

@@ -8,6 +8,7 @@ export const ASIconsOptions: IconsOptions = {
     'vertical-align': 'middle',
     // ...
   },
+  autoInstall: true
 }
 
 export default ASIconsOptions

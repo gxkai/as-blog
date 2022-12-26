@@ -3,7 +3,9 @@ import { defineConfig } from 'vite'
 import Unocss from 'unocss/vite'
 import SvgLoader from 'vite-svg-loader'
 import banner from 'vite-plugin-banner'
-
+import VueSetupExtend from 'vite-plugin-vue-setup-extend'
+import AutoImport from 'unplugin-auto-import/vite'
+import VueJSX from '@vitejs/plugin-vue-jsx'
 import dts from 'vite-plugin-dts'
 
 import vue from '@vitejs/plugin-vue'
@@ -28,14 +30,25 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
     }),
+    VueJSX(),
+    VueSetupExtend(),
     Unocss(),
     SvgLoader(),
+    AutoImport({
+      imports: ['vue', '@vueuse/core'],
+      dts: 'auto-imports.d.ts',
+    }),
     banner({
       content: `/**\n * name: ${pkg.name}\n * version: v${
         pkg.version
       }\n * (c) ${new Date().getFullYear()}\n * description: ${pkg.description}\n * author: ${pkg.author}\n */`,
     }),
   ],
+  server: {
+    hmr: {
+      overlay: false
+    }
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
@@ -68,5 +81,16 @@ export default defineConfig({
         },
       },
     },
-  }
+  },
+  css: {
+    postcss: {
+      plugins: [
+        require('postcss-import'),
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        require('postcss-nested')({
+          bubble: ['screen'],
+        }),
+      ],
+    },
+  },
 })
