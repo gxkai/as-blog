@@ -13,13 +13,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: setup caching
-        uses: actions/cache@v2
-        with:
-          path: ${{ env.PNPM_CACHE_FOLDER }}
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
+#      - name: setup caching
+#        uses: actions/cache@v2
+#        with:
+#          path: ${{ env.PNPM_CACHE_FOLDER }}
+#          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+#          restore-keys: |
+#            ${{ runner.os }}-pnpm-
 
       - name: setup pnpm
         uses: pnpm/action-setup@v2.0.1
