@@ -24,12 +24,12 @@ jobs:
       - name: setup pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.x
+          version: 7.x
 
       - name: setup node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 16.x
+          node-version: 19.x
           cache: 'pnpm'
 
       - name: setup pnpm config
@@ -57,12 +57,12 @@ jobs:
       - name: setup pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.x
+          version: 7.x
 
       - name: setup node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 16.x
+          node-version: 19.x
           cache: 'pnpm'
 
       - name: setup pnpm config
