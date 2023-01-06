@@ -1,0 +1,60 @@
+.as-tab-nav.tabs {
+    @apply border-b;
+    @apply border-neutral-300;
+    @apply dark:(border-neutral-700);
+}
+.as-tab-nav.tabs .as-tab-nav-items {
+    @apply m-0 px-6 pt-4 space-x-2;
+}
+.as-tab-nav.tabs .as-tab-nav-item {
+    @apply inline-block;
+}
+.as-tab-nav.tabs .as-tab-nav-link,
+.as-tab-nav.tabs .as-tab-nav-link:visited {
+    @apply block px-6 py-4 -mb-1px rounded-t;
+    @apply border border-b-0;
+    @apply hover:(no-underline);
+    @apply border-neutral-200 text-neutral-600;
+    @apply dark:(border-neutral-700 text-neutral-400);
+    @apply hover:(border-neutral-300 text-black underline);
+    @apply dark:hover:(text-white border-neutral-600);
+}
+.as-tab-nav.tabs .as-tab-nav-link-active,
+.as-tab-nav.tabs .as-tab-nav-link-active:visited {
+    @apply bg-neutral-100 border-neutral-300 text-black;
+    @apply dark:(bg-neutral-800 border-neutral-700 text-white);
+    border-bottom-color: white;
+}
+.as-tab-nav.tabs .as-tab-nav-item.disabled {
+    @apply inline-block p-4 text-neutral-400 rounded-t-lg cursor-not-allowed dark:text-neutral-500;
+}
+
+.as-tab-nav.pills .as-tab-nav-item {
+    @apply inline-block p-4px;
+    @apply bg-neutral-200 text-neutral-600;
+    @apply dark:(bg-neutral-900 text-neutral-400);
+}
+.as-tab-nav.pills .as-tab-nav-link,
+.as-tab-nav.pills .as-tab-nav-link:visited {
+    @apply block px-6 py-4 rounded border border-transparent;
+    @apply bg-neutral-200 text-neutral-600;
+    @apply hover:(no-underline);
+    @apply dark:(bg-neutral-900 text-neutral-400);
+    @apply hover:(text-black underline);
+    @apply dark:hover:(text-white);
+}
+.as-tab-nav.pills .as-tab-nav-link-active,
+.as-tab-nav.pills .as-tab-nav-link-active:visited {
+    @apply bg-white border-neutral-300 text-black border;
+    @apply border-neutral-300;
+    @apply dark:(bg-neutral-700 border-neutral-700 text-white shadow-inner);
+}
+.as-tab-nav.pills .as-tab-nav-item.disabled {
+    @apply inline-block p-4 text-neutral-400 rounded-t-lg cursor-not-allowed dark:text-neutral-500;
+}
+.as-tab-nav.pills .as-tab-nav-item:first-child {
+    @apply rounded-l-lg;
+}
+.as-tab-nav.pills .as-tab-nav-item:last-child {
+    @apply rounded-r-lg;
+}
